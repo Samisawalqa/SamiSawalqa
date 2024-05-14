@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: 500px 500px;
+            grid-template-rows: repeat(auto-fill, 250px);
+        }
+
+        div {
+            position: relative;
+            align-items: center;
+            justify-items: center;
+
+        }
+
+        .status {
+            font-size: 5px;
+            background-color: black;
+            opacity: 70%;
+            color: white;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            padding: 3px;
+        }
+
+
+        .img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div><img class="img" src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg"><span
+                class="status">sold</span></div>
+        <div><img class="img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Lake_mapourika_NZ.jpeg/1280px-Lake_mapourika_NZ.jpeg"><span
+                class="status">available</span></div>
+        <div><img class="img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Ocean_from_Leblon.jpg/1280px-Ocean_from_Leblon.jpg"><span
+                class="status">available</span></div>
+        <div><img class="img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/44_-_Iguazu_-_D%C3%A9cembre_2007.jpg/1920px-44_-_Iguazu_-_D%C3%A9cembre_2007.jpg"><span
+                class="status">sold</span></div>
+
+    </div>
+</body>
+
+</html>

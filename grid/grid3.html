@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(7, 100px);
+            grid-template-rows: repeat(7, 100px);
+            gap: 5px;
+        }
+
+        .box {
+            border-radius: 15px;
+        }
+
+        #header {
+            background-color: rgb(251, 255, 0);
+            grid-column: span 7;
+        }
+
+        #sidebar {
+            background-color: rgb(255, 72, 0);
+            grid-area: 2/1/6/3;
+        }
+
+        #nav {
+            background-color: cyan;
+            grid-area: 2/3/3/8;
+        }
+
+        #article {
+            background-color: gray;
+            grid-area: 3/3/6/8;
+        }
+
+        #footer {
+            background-color: rgb(33, 33, 67);
+            grid-area: 6/1/7/8;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box" id="header">
+            <h1>header</h1>
+        </div>
+        <div class="box" id="sidebar">
+            <h1>sidebar</h1>
+        </div>
+        <div class="box" id="nav">
+            <h1>nav</h1>
+        </div>
+        <div class="box" id="article">
+            <h1>article</h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum voluptatum sequi totam sed?
+            Ipsum quisquam iste unde ipsam neque. Necessitatibus deleniti illo atque sequi quis suscipit delectus amet
+            ipsam nihil!footerorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum voluptatum sequi totam sed?
+            Ipsum quisquam iste unde ipsam neque. Necessitatibus deleniti illo atque sequi quis suscipit delectus amet
+            ipsam nihil!footer
+        </div>
+        <div class="box" id="footer">
+            <h1>footer</h1>
+        </div>
+    </div>
+</body>
+
+</html>

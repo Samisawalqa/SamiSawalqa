@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+
+            grid-template-columns: repeat(7, 50PX);
+            grid-auto-flow: row;
+            grid-auto-rows: auto;
+            width: 350px;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+
+        .pfp {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: red;
+        }
+
+        .name {
+            grid-column: span 5;
+            font-weight: bolder;
+            text-align: start;
+            margin-left: 5%;
+        }
+
+        .editor {
+            text-decoration: underline;
+            font-size: 12px;
+        }
+
+        .redtri {
+            color: red;
+            margin-top: 30%;
+            margin-left: 80%;
+        }
+
+        .article {
+            margin-top: 10%;
+            grid-area: 2/1/auto/-1;
+        }
+
+        .redbox {
+
+            margin-top: 10px;
+            grid-column: span 7;
+            height: 200px;
+            background-color: red;
+        }
+
+        .hr {
+
+            grid-column: span 7;
+        }
+
+        .re {
+            font-size: 10px;
+            grid-column: span 3;
+        }
+
+        .cirdiv {
+            column-gap: 5px;
+            grid-column-end: -3;
+            display: grid;
+            grid-template-columns: repeat(7, 15px);
+        }
+
+        .redcir {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="pfp"></div>
+        <div class="name">Arlond Schwarzenegger<br><span class="editor"> editor</span></div>
+        <div class="redtri">▼</div>
+        <div class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempore repellendus enim
+            ea aperiam. Provident maxime nobis maiores vero tempore impedit, perspiciatis, eum veritatis inventore
+            veniam repellat nostrum, magni exercitationem?</div>
+        <div class="redbox"></div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="re">Like Tweet Comment</div>
+        <div class="cirdiv">
+            <div class="redcir"></div>
+            <div class="redcir"></div>
+            <div class="redcir"></div>
+            <div class="redcir"></div>
+            <div class="redcir"></div>
+            <div class="redcir"></div>
+            <div class="redcir"></div>
+        </div>
+    </div>
+</body>
+
+</html>
